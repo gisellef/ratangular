@@ -18,10 +18,10 @@ its package manager (npm) installed.  You can get them from [http://nodejs.org/]
 
 ### Clone repo
 
-Clone the  repository using [git][git]:
+Clone the  repository:
 
 ```
-git clone https://github.com/niclabs/ratangular.git
+git clone https://github.com/gisellef/ratangular.git
 cd ratangular
 ```
 
