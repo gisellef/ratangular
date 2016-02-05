@@ -1,0 +1,25 @@
+
+<div class="mdl-grid" ng-controller="SseController" >
+
+  <div ng-repeat='(eventType, data) in sseEvents  | custom:filter' class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
+    
+    <h4 >{{eventType}} </h4>
+    <chartist class="ct-chart" chartist-data=data chartist-chart-type="Bar"
+    chartist-chart-options="{
+    'seriesBarDistance': 10 ,
+    'axisY': {
+    'offset': 150,          
+  },
+  'horizontalBars': true,
+  'chartPadding': {
+  top: 15,
+  right: 35,
+  bottom: 5,
+  left: 15
+},
+reverseData: true,
+'scaleMinSpace': 1
+}"></chartist>
+
+
+</div>
